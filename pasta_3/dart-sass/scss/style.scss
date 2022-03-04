@@ -1,0 +1,43 @@
+@import "variaveis.scss";
+@mixin btn-style($background, $color, $border) {
+    background: $background;
+    color: $color;
+    border: 1px solid $border;
+    &:hover{
+        background: darken($background, 5%); //o darken deixa mais escuro, mas tb tem o daseturate
+    }
+}
+
+main{
+    
+    .btn{
+        border-radius: 8px;
+        width: 80px;
+        height: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: 0;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+
+        &.btn--laranja{
+            /*@extend .btn;//outra forma de herança*/
+            @include btn-style($color-orange,white,$color-orangered);
+           
+        }
+        &.btn--amarelo{
+            @include btn-style(yellow,black ,goldenrod);
+            
+        }
+        &.btn--azul{
+            @include btn-style(blue,white ,black);
+            
+        }
+    }
+    
+
+   
+    
+    
+}
+
