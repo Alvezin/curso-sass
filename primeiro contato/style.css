@@ -1,0 +1,30 @@
+/*p{ Agrupamentos isso se chama nasting
+    span{
+        background-color: red;
+    }
+    b{ //todo b dentro p
+        background-color: blue;
+    }
+    :hover{ //usando hover no p
+        color: aliceblue;
+    }
+}
+.container{
+    color: black;
+    p{
+        background-color: aqua;
+        display: flex;
+    }
+    a{
+        font-weight: bold;
+    }
+}
+body{
+    color: aquamarine;
+    background-color: blue;
+}*/
+p {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
